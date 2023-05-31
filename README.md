@@ -2,5 +2,14 @@
 This is the repository for the 2023 Seasons of Code Project "Image Processing and Object Detection".
 
 ## Mentors
-1. Prajyot Chakre
-2. Suyash Waghmare
+- Prajyot Chakre
+- Suyash Waghmare
+
+## Weekly Plan
+- Week 1 : Basics of Python
+- Week 2 : Understanding Modules and Libraries (Numpy, Pandas, OpenCV)
+- **_Checkpoint_**
+- Week 3 : Understanding edge detection algorithms
+- Week 4 : Model Implementation
+- Week 5 : Model Assignment
+- Week 6 : Conclusion
