@@ -15,3 +15,6 @@ This is the repository for the 2023 Seasons of Code Project "Image Processing an
 | Week 4 | Model Implementation |
 | Week 5 | Model Assignment |
 | Week 6 | Conclusion |
+
+## Resources
+- A list of all the resources was shared by the mentor [over here](https://docs.google.com/document/d/1u7mV3QSv3KSqTp5quA21YPPvuZne9pn9wGn1KSxymTI/edit)
