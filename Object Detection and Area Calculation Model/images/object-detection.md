@@ -1,1 +1,0 @@
-The object detection model has been tested succesfully on the images given in this folder and objects pertaining to the [Object Categories](https://github.com/hsr-22/SoC-2023-ImageProcessing-and-ObjectDetection/blob/main/Object%20Detection%20and%20Area%20Calculation%20Model/Object%20Categories.txt) file situated in this repository.
