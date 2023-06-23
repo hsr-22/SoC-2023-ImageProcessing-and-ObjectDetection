@@ -1,6 +1,8 @@
-# Documentation for Object Detection and Measurement
+# Documentation for Object Detection and Area Measurement
 
-This documentation explains the code provided for object detection and measurement using computer vision techniques. The code utilizes the `cvlib` library and OpenCV (`cv2`) to detect objects in an image and measure their areas.
+This documentation explains the code provided for object detection and area measurement using computer vision techniques. The code utilizes the `cvlib` library and OpenCV (`cv2`) to detect objects in an image and measure their areas.
+Doing advanced object detection and counting number of objects can vary greatly in difficulty depending on the image file provided to it and the presence/absence of details in the picture. 
+This code will try its best to count the number of objects corresponding to the categories mentioned in the .txt file. It has been tested on a set of images provided in the images folder in this directory.
 
 ## Prerequisites
 You can install the necessary libraries using pip:
@@ -23,7 +25,7 @@ from cvlib.object_detection import draw_bbox
 
 2. Load and display the image:
 ```python
-img = cv2.imread('toucan.jpg')
+img = cv2.imread('image_path')
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
 plt.show()
@@ -77,7 +79,7 @@ def measure_object_area(image_path):
   _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
 
   # Find contours in the binary image
-  contours, hierarchies = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+  contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
   total_area = 0
   # Iterate through each contour
@@ -91,11 +93,9 @@ def measure_object_area(image_path):
   plt.imshow(binary, cmap='gray')
 ```
 
-3. Set the image path and call the `
-
-measure_object_area` function:
+3. Set the image path and call the `measure_object_area` function:
 ```python
-image_path = "cube.jpg"
+image_path = "image_path"
 plt.imshow(cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB))
 measure_object_area(image_path)
 ```
